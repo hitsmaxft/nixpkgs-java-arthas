@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   src = fetchzip {
       url = "https://github.com/alibaba/arthas/releases/download/arthas-all-${version}/arthas-bin.zip";
       hash = "sha256-dN50xjQqfo17QwaQSSPcaHo3p6AfsGRQjRJ3MSwAbLg=";
-      curlOptsList = ["-x" "http://127.0.0.1:7890"];
+      # curlOptsList = ["-x" "http://127.0.0.1:7890"];
       stripRoot=false;
   };
 
